@@ -1,0 +1,1311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>হাফেজে কুরআন জনশক্তিদের তালিকা</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/css/bootstrap-select.css"/>
+
+    <style>
+          body {    font-family: 'SolaimanLipi', Arial, sans-serif !important;}
+          #branch1 {                 
+              border: 1px solid #ced4da;
+          }
+          .bootstrap-select > .dropdown-toggle {  
+              border: 1px solid #0942ee;
+            }
+            select:required:focus {
+              border: 1px solid red;
+              outline: none;
+              }
+    </style>
+    <?!= include('JavaScript'); ?>
+  </head>       
+       
+  <body>      
+                      
+    <div class="container-fluid py-4">
+      <div class="container shadow-lg p-3 mb-5 bg-body rounded">
+
+      <form action="" class="form" id="myForm" onsubmit="handleFormSubmit(this)">
+       <div class="row">
+          <div class="col text-center"> 
+
+                  <caption><h3 class="pb-3"> হাফেজে কুরআন জনশক্তিদের তালিকা </h3></caption>                    
+               
+                  <div class="row form-group mx-5">
+                    <label for="branch1" class="col control-label">শাখার নাম </label>
+                    <div class="col-8">
+
+                     <select id="branch1" name="branch1"  onclick="branchFn1()" required class="selectpicker show-tick form-control" data-live-search="true">
+                    
+                        <option selected disabled> সিলেক্ট করুন </option>
+                        <option>আইআইইউসি</option>
+                        <option>আইডিয়াল ইন্সটিটিউট</option>
+                        <option>ইংলিশ মিডিয়াম</option>
+                        <option>ইসলামী বিশ্ববিদ্যালয়</option>
+                        <option>কক্সবাজার জেলা</option>
+                        <option>কক্সবাজার শহর</option>
+                        <option>কিশোরগঞ্জ জেলা উত্তর</option>
+                        <option>কিশোরগঞ্জ জেলা দক্ষিণ</option>
+                        <option>কুড়িগ্রাম জেলা</option>
+                        <option>কুমিল্লা জেলা উত্তর</option>
+                        <option>কুমিল্লা জেলা দক্ষিণ</option>
+                        <option>কুমিল্লা জেলা পশ্চিম</option>
+                        <option>কুমিল্লা জেলা পূর্ব</option>
+                        <option>কুমিল্লা বিশ্ববিদ্যালয়</option>
+                        <option>কুমিল্লা মহানগর</option>
+                        <option>কুষ্টিয়া জেলা</option>
+                        <option>কুষ্টিয়া শহর</option>
+                        <option>খাগড়াছড়ি পার্বত্য জেলা</option>
+                        <option>খুলনা জেলা উত্তর</option>
+                        <option>খুলনা জেলা দক্ষিণ</option>
+                        <option>খুলনা মহানগর</option>
+                        <option>গাইবান্ধা জেলা</option>
+                        <option>গাজীপুর জেলা</option>
+                        <option>গাজীপুর মহানগর</option>
+                        <option>গোপালগঞ্জ জেলা</option>
+                        <option>চট্টগ্রাম জেলা উত্তর</option>
+                        <option>চট্টগ্রাম জেলা দক্ষিণ</option>
+                        <option>চট্টগ্রাম জেলা পশ্চিম</option>
+                        <option>চট্টগ্রাম জেলা পূর্ব</option>
+                        <option>চট্টগ্রাম বিশ্ববিদ্যালয়</option>
+                        <option>চট্টগ্রাম মহানগর উত্তর</option>
+                        <option>চট্টগ্রাম মহানগর দক্ষিণ</option>
+                        <option>চাঁদপুর জেলা</option>
+                        <option>চাঁদপুর শহর</option>
+                        <option>চাঁপাইনবাবগঞ্জ জেলা</option>
+                        <option>চাঁপাইনবাবগঞ্জ শহর</option>
+                        <option>চুয়াডাঙ্গা জেলা</option>
+                        <option>জগন্নাথ বিশ্ববিদ্যালয়</option>
+                        <option>জয়পুরহাট জেলা</option>
+                        <option>জামালপুর জেলা</option>
+                        <option>ঝালকাঠি জেলা</option>
+                        <option>ঝিনাইদহ জেলা</option>
+                        <option>ঝিনাইদহ শহর</option>
+                        <option>টাঙ্গাইল জেলা</option>
+                        <option>টাঙ্গাইল শহর</option>
+                        <option>ঠাকুরগাঁও জেলা</option>
+                        <option>ঠাকুরগাঁও শহর</option>
+                        <option>ডুয়েট</option>
+                        <option>ঢাকা কলেজ</option>
+                        <option>ঢাকা জেলা উত্তর</option>
+                        <option>ঢাকা জেলা দক্ষিণ</option>
+                        <option>ঢাকা বিশ্ববিদ্যালয়</option>
+                        <option>ঢাকা মহানগর উত্তর</option>
+                        <option>ঢাকা মহানগর দক্ষিণ</option>
+                        <option>ঢাকা মহানগর পশ্চিম</option>
+                        <option>ঢাকা মহানগর পূর্ব</option>
+                        <option>দিনাজপুর জেলা উত্তর</option>
+                        <option>দিনাজপুর জেলা দক্ষিণ</option>
+                        <option>দিনাজপুর শহর</option>
+                        <option>নওগাঁ জেলা পশ্চিম</option>
+                        <option>নওগাঁ জেলা পূর্ব</option>
+                        <option>নড়াইল জেলা</option>
+                        <option>নরসিংদী জেলা</option>
+                        <option>নরসিংদী শহর</option>
+                        <option>নাটোর জেলা</option>
+                        <option>নারায়ণগঞ্জ জেলা</option>
+                        <option>নারায়ণগঞ্জ মহানগর</option>
+                        <option>নীলফামারী জেলা</option>
+                        <option>নেত্রকোনা জেলা</option>
+                        <option>নোবিপ্রবি</option>
+                        <option>নোয়াখালী জেলা উত্তর</option>
+                        <option>নোয়াখালী জেলা দক্ষিণ</option>
+                        <option>নোয়াখালী শহর</option>
+                        <option>পঞ্চগড় জেলা</option>
+                        <option>পটুয়াখালী জেলা</option>
+                        <option>পটুয়াখালী শহর</option>
+                        <option>পাবনা জেলা পশ্চিম</option>
+                        <option>পাবনা জেলা পূর্ব</option>
+                        <option>পাবনা শহর</option>
+                        <option>পিরোজপুর জেলা</option>
+                        <option>প্রাইভেট ইউনিভার্সিটি</option>
+                        <option>ফরিদপুর জেলা</option>
+                        <option>ফরিদপুর শহর</option>
+                        <option>ফেনী জেলা</option>
+                        <option>ফেনী শহর</option>
+                        <option>বগুড়া জেলা পশ্চিম</option>
+                        <option>বগুড়া জেলা পূর্ব</option>
+                        <option>বগুড়া শহর</option>
+                        <option>বরগুনা জেলা</option>
+                        <option>বরিশাল জেলা পশ্চিম</option>
+                        <option>বরিশাল জেলা পূর্ব</option>
+                        <option>বরিশাল মহানগর</option>
+                        <option>বাকৃবি</option>
+                        <option>বাগেরহাট জেলা</option>
+                        <option>বান্দরবান পার্বত্য জেলা</option>
+                        <option>বেরোবি</option>
+                        <option>ব্রাহ্মণবাড়িয়া জেলা</option>
+                        <option>ভোলা জেলা</option>
+                        <option>ভোলা শহর</option>
+                        <option>মডেল ইন্সটিটিউট</option>
+                        <option>মাগুরা জেলা</option>
+                        <option>মাদারীপুর জেলা</option>
+                        <option>মানিকগঞ্জ জেলা</option>
+                        <option>মুন্সিগঞ্জ জেলা</option>
+                        <option>মেডিকেল জোন</option>
+                        <option>মেহেরপুর জেলা</option>
+                        <option>মোমেনশাহী জেলা উত্তর</option>
+                        <option>মোমেনশাহী জেলা দক্ষিণ</option>
+                        <option>মোমেনশাহী মহানগর</option>
+                        <option>মৌলভীবাজার জেলা</option>
+                        <option>মৌলভীবাজার শহর</option>
+                        <option>যশোর জেলা পশ্চিম</option>
+                        <option>যশোর জেলা পূর্ব</option>
+                        <option>যশোর শহর</option>
+                        <option>রংপুর জেলা উত্তর</option>
+                        <option>রংপুর জেলা দক্ষিণ</option>
+                        <option>রংপুর মহানগর</option>
+                        <option>রাঙ্গামাটি পার্বত্য জেলা</option>
+                        <option>রাজবাড়ী জেলা</option>
+                        <option>রাজশাহী জেলা পশ্চিম</option>
+                        <option>রাজশাহী জেলা পূর্ব</option>
+                        <option>রাজশাহী বিশ্ববিদ্যালয়</option>
+                        <option>রাজশাহী মহানগর</option>
+                        <option>লক্ষ্মীপুর জেলা</option>
+                        <option>লক্ষ্মীপুর শহর</option>
+                        <option>লালমনিরহাট জেলা</option>
+                        <option>শরীয়তপুর জেলা</option>
+                        <option>শাবিপ্রবি</option>
+                        <option>শেরপুর জেলা</option>
+                        <option>সাইমুম</option>
+                        <option>সাতক্ষীরা জেলা</option>
+                        <option>সাতক্ষীরা শহর</option>
+                        <option>সায়েন্স একাডেমি</option>
+                        <option>সিরাজগঞ্জ জেলা</option>
+                        <option>সিরাজগঞ্জ শহর</option>
+                        <option>সিলেট জেলা পশ্চিম</option>
+                        <option>সিলেট জেলা পূর্ব</option>
+                        <option>সিলেট মহানগর</option>
+                        <option>সুনামগঞ্জ জেলা</option>
+                        <option>হবিগঞ্জ জেলা</option>
+                        <option>শিশুকল্যাণ</option>
+                      </select>
+                    </div>
+                  </div>
+                    
+                      
+                <br>
+          </div>
+       </div>
+
+        <div class="row">
+          <div class="col text-center">
+              
+            <div class="table-responsive p-2">              
+                              
+                <table class="table table-bordered table-sm table-hover">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">ক্রমিক</th>
+                      <th scope="col">নাম</th>
+                      <th scope="col">শ্রেণি/বর্ষ </th>
+                      <th scope="col"> সাংগঠনিক মান </th>
+                      <th scope="col"> তারাবি পড়ান কি? </th>
+                      <th scope="col">টেলিগ্রাম নম্বর/ইউজারনেম</th>
+                      <th scope="col">অফলাইন নম্বর</th> 
+                      <th scope="col">নিজ জেলা</th> 
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <!-- row 1 -->
+                    <tr>
+                          <th scope="row">1</th>
+                          <td><input type="text" class="form-control" id="name1" name="name1" required ></td>
+                          <td><input type="text" class="form-control" id="class1" name="class1" required></td>
+                          <td>
+                              <select id="designation1" name="designation1" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi1" name="tarabi1" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber1" name="tgnumber1"></td>
+                          <td><input type="text" class="form-control" id="offlinenum1" name="offlinenum1"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                <select id="jela1" name="jela1"  onclick="jelaFn1()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+
+                    <tr>
+
+                      <!-- row 2 -->
+                          <th scope="row">2</th>
+                          <td><input type="text" class="form-control" id="name2" name="name2" required ></td>
+                          <td><input type="text" class="form-control" id="class2" name="class2" required></td>
+                          <td>
+                              <select id="designation2" name="designation2" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi2" name="tarabi2" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber2" name="tgnumber2"></td>
+                          <td><input type="text" class="form-control" id="offlinenum2" name="offlinenum2"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela2" name="jela2"  onclick="jelaFn2()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+
+                    <!-- row 3 -->
+                    <tr>
+
+                          <th scope="row">3</th>
+                          <td><input type="text" class="form-control" id="name3" name="name3" required ></td>
+                          <td><input type="text" class="form-control" id="class3" name="class3" required></td>
+                          <td>
+                              <select id="designation3" name="designation3" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi3" name="tarabi3" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber3" name="tgnumber3"></td>
+                          <td><input type="text" class="form-control" id="offlinenum3" name="offlinenum13"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela3" name="jela3"  onclick="jelaFn3()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+
+                        <!-- row 4 -->
+                    <tr>
+                          <th scope="row">4</th>
+                          <td><input type="text" class="form-control" id="name4" name="name4" required ></td>
+                          <td><input type="text" class="form-control" id="class4" name="class4" required></td>
+                          <td>
+                              <select id="designation4" name="designation4" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi4" name="tarabi4" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber4" name="tgnumber4"></td>
+                          <td><input type="text" class="form-control" id="offlinenum4" name="offlinenum4"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela4" name="jela4"  onclick="jelaFn4()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+
+<!-- row 5 -->
+                    <tr>
+                          <th scope="row">5</th>
+                          <td><input type="text" class="form-control" id="name5" name="name5" required ></td>
+                          <td><input type="text" class="form-control" id="class5" name="class5" required></td>
+                          <td>
+                              <select id="designation5" name="designation5" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi5" name="tarabi5" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber5" name="tgnumber5"></td>
+                          <td><input type="text" class="form-control" id="offlinenum1" name="offlinenum1"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela5" name="jela5"  onclick="jelaFn5()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+                        <!-- row 6 -->
+                    <tr>
+                          <th scope="row">6</th>
+                          <td><input type="text" class="form-control" id="name6" name="name6" required ></td>
+                          <td><input type="text" class="form-control" id="class6" name="class6" required></td>
+                          <td>
+                              <select id="designation6" name="designation6" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi6" name="tarabi6" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber6" name="tgnumber6"></td>
+                          <td><input type="text" class="form-control" id="offlinenum1" name="offlinenum1"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela6" name="jela6"  onclick="jelaFn6()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+                          <!-- row 7 -->
+                    <tr>
+                          <th scope="row">7</th>
+                          <td><input type="text" class="form-control" id="name7" name="name7" required ></td>
+                          <td><input type="text" class="form-control" id="class7" name="class7" required></td>
+                          <td>
+                              <select id="designation7" name="designation7" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi7" name="tarabi7" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber7" name="tgnumber7"></td>
+                          <td><input type="text" class="form-control" id="offlinenum7" name="offlinenum7"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela7" name="jela7"  onclick="jelaFn7()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+<!-- row 8 -->
+                    <tr>
+                          <th scope="row">8</th>
+                          <td><input type="text" class="form-control" id="name8" name="name8" required ></td>
+                          <td><input type="text" class="form-control" id="class8" name="class8" required></td>
+                          <td>
+                              <select id="designation8" name="designation8" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi8" name="tarabi8" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber8" name="tgnumber8"></td>
+                          <td><input type="text" class="form-control" id="offlinenum8" name="offlinenum8"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela8" name="jela8"  onclick="jelaFn8()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+                    <!-- row 9 -->
+                    <tr>
+                          <th scope="row">9</th>
+                          <td><input type="text" class="form-control" id="name9" name="name9" required ></td>
+                          <td><input type="text" class="form-control" id="class9" name="class9" required></td>
+                          <td>
+                              <select id="designation9" name="designation9" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সদস্য</option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi9" name="tarabi9" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber9" name="tgnumber9"></td>
+                          <td><input type="text" class="form-control" id="offlinenum9" name="offlinenum9"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela9" name="jela9"  onclick="jelaFn9()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+
+                    <tr>
+                          <th scope="row">10</th>
+                          <td><input type="text" class="form-control" id="name10" name="name10" required ></td>
+                          <td><input type="text" class="form-control" id="class10" name="class10" required></td>
+                          <td>
+                              <select id="designation10" name="designation10" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>সাথী</option>
+                                  <option>কর্মী</option>
+                              </select>
+                          </td>
+                          <td>
+                              <select id="tarabi10" name="tarabi10" class="form-select">                              
+                                  <option selected disabled> সিলেক্ট করুন </option>
+                                  <option>হ্যাঁ</option>
+                                  <option>না</option>
+                              </select>
+                          </td>
+                          
+                          <td><input type="text" class="form-control" id="tgnumber10" name="tgnumber10"></td>
+                          <td><input type="text" class="form-control" id="offlinenum10" name="offlinenum10"></td>
+                          <td>
+             
+                              <div class="form-group">
+                                  <select id="jela10" name="jela10"  onclick="jelaFn10()" required class="selectpicker show-tick form-control" data-live-search="true">
+                                    <option selected disabled> সিলেক্ট করুন </option>
+                                    <option>কক্সবাজার</option>
+                                    <option>কিশোরগঞ্জ</option>
+                                    <option>কুড়িগ্রাম</option>
+                                    <option>কুমিল্লা</option>
+                                    <option>কুষ্টিয়া</option>
+                                    <option>খাগড়াছড়ি</option>
+                                    <option>খুলনা</option>
+                                    <option>গাইবান্ধা</option>
+                                    <option>গাজীপুর</option>
+                                    <option>গোপালগঞ্জ</option>
+                                    <option>চট্টগ্রাম</option>
+                                    <option>চাঁদপুর</option>
+                                    <option>চাঁপাইনবাবগঞ্জ</option>
+                                    <option>চুয়াডাঙ্গা</option>
+                                    <option>জয়পুরহাট</option>
+                                    <option>জামালপুর</option>
+                                    <option>ঝালকাঠি</option>
+                                    <option>ঝিনাইদহ</option>
+                                    <option>টাঙ্গাইল</option>
+                                    <option>ঠাকুরগাঁও</option>
+                                    <option>ঢাকা</option>
+                                    <option>দিনাজপুর</option>
+                                    <option>নওগাঁ</option>
+                                    <option>নড়াইল</option>
+                                    <option>নরসিংদী</option>
+                                    <option>নাটোর</option>
+                                    <option>নারায়ণগঞ্জ</option>
+                                    <option>নীলফামারী</option>
+                                    <option>নেত্রকোণা</option>
+                                    <option>নোয়াখালী</option>
+                                    <option>পঞ্চগড়</option>
+                                    <option>পটুয়াখালী</option>
+                                    <option>পাবনা</option>
+                                    <option>পিরোজপুর</option>
+                                    <option>ফরিদপুর</option>
+                                    <option>ফেনী</option>
+                                    <option>বগুড়া</option>
+                                    <option>বরগুনা</option>
+                                    <option>বরিশাল</option>
+                                    <option>বাগেরহাট</option>
+                                    <option>বান্দরবান</option>
+                                    <option>ব্রাহ্মণবাড়িয়া</option>
+                                    <option>ভোলা</option>
+                                    <option>ময়মনসিংহ</option>
+                                    <option>মাগুরা</option>
+                                    <option>মাদারীপুর</option>
+                                    <option>মানিকগঞ্জ</option>
+                                    <option>মুন্সিগঞ্জ</option>
+                                    <option>মেহেরপুর</option>
+                                    <option>মৌলভীবাজার</option>
+                                    <option>যশোর</option>
+                                    <option>রংপুর</option>
+                                    <option>রাঙ্গামাটি</option>
+                                    <option>রাজবাড়ী</option>
+                                    <option>রাজশাহী</option>
+                                    <option>লক্ষ্মীপুর</option>
+                                    <option>লালমনিরহাট</option>
+                                    <option>শরীয়তপুর</option>
+                                    <option>শেরপুর</option>
+                                    <option>সাতক্ষীরা</option>
+                                    <option>সিরাজগঞ্জ</option>
+                                    <option>সিলেট</option>
+                                    <option>সুনামগঞ্জ</option>
+                                    <option>হবিগঞ্জ</option>
+
+                                  </select>
+                                </div>
+
+                          </td>
+                    </tr>
+
+                    
+                  </tbody>
+                </table>
+    
+              </div>
+          </div>
+        </div>
+<!-- table one end -->
+
+
+<!-- table 3 -->
+    <div class="row">
+      <div class="col text-center">
+           <p align="center"> বি.দ্র. : সবগুলো তথ্য সঠিকভাবে পূরণ হয়ে গেলে 'সাবমিট করুন' বাটনে ক্লিক করুন। ক্লিকের পর সাবমিট বাটনের উপরে <b> "জাযাকাল্লাহ। আপনার দেওয়া তথ্য সঠিকভাবে গৃহীত হয়েছে।" </b> ম্যাসেজ দেখে ফরম সাবমিশন সম্পর্কে নিশ্চিত হোন। </p> 
+   
+              <h4 id="response_message"></h4>
+              
+    <button type="submit" class="btn btn-primary" align="center" id="submit"  >সাবমিট করুন</button>
+         
+
+                    <script>
+                       function branchFn1() {
+                            var branch1 = document.getElementById('branch1').value;
+                                          google.script.run       
+                                        .processForm(branch1) 
+                        }
+                       function jelaFn1() {
+                            var jela1 = document.getElementById('jela1').value;
+                                          google.script.run       
+                                        .processForm(jela1) 
+                        }
+
+                        function jelaFn2() {
+                            var jela2 = document.getElementById('jela2').value;
+                                          google.script.run       
+                                        .processForm(jela2) 
+                        }
+                        function jelaFn3() {
+                            var jela3 = document.getElementById('jela3').value;
+                                          google.script.run       
+                                        .processForm(jela3) 
+                        }
+                        function jelaFn4() {
+                            var jela4 = document.getElementById('jela4').value;
+                                          google.script.run       
+                                        .processForm(jela4) 
+                        }
+                        function jelaFn5() {
+                            var jela5 = document.getElementById('jela5').value;
+                                          google.script.run       
+                                        .processForm(jela5) 
+                        }
+                        function jelaFn6() {
+                            var jela6 = document.getElementById('jela6').value;
+                                          google.script.run       
+                                        .processForm(jela6) 
+                        }
+                        function jelaFn7() {
+                            var jela7 = document.getElementById('jela7').value;
+                                          google.script.run       
+                                        .processForm(jela7) 
+                        }
+                        function jelaFn8() {
+                            var jela8 = document.getElementById('jela8').value;
+                                          google.script.run       
+                                        .processForm(jela8) 
+                        }
+                        function jelaFn9() {
+                            var jela9 = document.getElementById('jela9').value;
+                                          google.script.run       
+                                        .processForm(jela9) 
+                        }
+                        function jelaFn10() {
+                            var jela10 = document.getElementById('jela10').value;
+                                          google.script.run       
+                                        .processForm(jela10) 
+                        }
+                    </script> 
+
+
+
+      <script>  
+           const scriptURL = 'https://docs.google.com/spreadsheets/d/1gjbVdq-qAoPUI7-6I4kY5fTCso-MksgLxDrRbNQSEZQ/edit#gid=120734405'
+      const form = document.forms['myForm']
+
+      form.addEventListener('submit', e => {
+    e.preventDefault()
+    var response_message = document.getElementById("response_message");
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => response_message.innerHTML = '"জাযাকাল্লাহ। আপনার দেওয়া তথ্য সঠিকভাবে গৃহীত হয়েছে।"')
+      .catch(error => response_message.innerHTML = "Error!")
+      })
+      
+  </script>
+           
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/js/bootstrap-select.js"></script>
+
+
+  </body>
+</html>
